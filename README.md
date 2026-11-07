@@ -1,4 +1,4 @@
-# Full-screen SPZ Gaussian Splat Viewer
+# Test: Full-screen SPZ Gaussian Splat Viewer
 
 A static, mobile-friendly Gaussian Splat viewer built with Vite, Three.js and SparkJS. It is designed for GitHub Pages.
 
@@ -12,44 +12,6 @@ A static, mobile-friendly Gaussian Splat viewer built with Vite, Three.js and Sp
 - Reset view button
 - Responsive layout and loading/error states
 - GitHub Actions deployment to GitHub Pages
-
-## 1. Add your SPZ
-
-Copy your file to:
-
-```text
-public/models/scene.spz
-```
-
-The filename is case-sensitive. If you want another name, edit `SPLAT_URL` in `src/main.js`.
-
-## 2. Run locally
-
-Install Node.js 22 or newer, then:
-
-```bash
-npm install
-npm run dev
-```
-
-Open the local URL Vite prints. To test the production build:
-
-```bash
-npm run build
-npm run preview
-```
-
-## 3. Publish on GitHub Pages
-
-1. Create a GitHub repository (for example `my-splat-viewer`).
-2. Copy this project into the repository, including your SPZ file.
-3. Commit and push to the `main` branch.
-4. In the repository, open **Settings → Pages**.
-5. Under **Build and deployment → Source**, select **GitHub Actions**.
-6. The included workflow builds and deploys the site on every push to `main`.
-7. When the workflow finishes, GitHub shows the published URL in **Settings → Pages**.
-
-The Vite configuration automatically sets the correct base path for a project site or a `username.github.io` site.
 
 ## Phone motion permissions
 
