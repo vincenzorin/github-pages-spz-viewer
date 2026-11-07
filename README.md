@@ -40,5 +40,4 @@ The default camera assumes the capture is centred near its origin and places the
 ## Notes
 
 - The SPZ is downloaded by each visitor from your GitHub Pages site. Large files can take time and count toward repository size and bandwidth limits.
-- Keep the repository public if you want anyone to view the page without authentication.
 - Spark uses WebGL2. Performance depends on the visitor's device and the size of the splat.
