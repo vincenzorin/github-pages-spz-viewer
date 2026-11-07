@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#090b10" />
+    <meta name="description" content="An immersive 3D Gaussian Splat viewer." />
+    <title>My 3D Scene</title>
+  </head>
+  <body>
+    <main id="app" aria-label="3D Gaussian Splat viewer">
+      <div id="viewer" aria-label="Interactive 3D scene"></div>
+
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <div>
+            <p class="eyebrow">A little world, captured</p>
+            <h1 id="scene-title">My 3D Scene</h1>
+          </div>
+        </div>
+        <div id="status" class="status" role="status" aria-live="polite">
+          <span class="status-dot"></span><span id="status-text">Loading scene…</span>
+        </div>
+      </header>
+
+      <div id="loading" class="loading">
+        <div class="spinner"></div>
+        <p id="loading-text">Loading your scene</p>
+        <div class="progress-track"><div id="progress" class="progress"></div></div>
+      </div>
+
+      <div id="error" class="error-panel" hidden>
+        <strong>Couldn't load this scene</strong>
+        <p id="error-message">Check that your SPZ file is in public/models/scene.spz.</p>
+      </div>
+
+      <footer class="controls">
+        <p class="hint desktop-hint">Drag to rotate <span>·</span> Right-drag to move</p>
+        <p class="hint mobile-hint">Drag to rotate <span>·</span> Two fingers to move</p>
+        <div class="actions">
+          <button id="motion" class="control-button motion-button" type="button" aria-pressed="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v3m0 14v3M4.93 4.93l2.12 2.12m9.9 9.9 2.12 2.12M2 12h3m14 0h3M4.93 19.07l2.12-2.12m9.9-9.9 2.12-2.12"/><circle cx="12" cy="12" r="4"/></svg>
+            <span id="motion-label">Enable motion</span>
+          </button>
+          <button id="reset" class="control-button reset-button" type="button">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 1 0 2.64-6.36L3 8"/><path d="M3 3v5h5"/></svg>
+            <span>Reset view</span>
+          </button>
+        </div>
+      </footer>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
