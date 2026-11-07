@@ -52,7 +52,7 @@ const controls = new OrbitControls(camera, renderer.domElement);
 controls.target.copy(LOOK_AT);
 controls.enableDamping = true;
 controls.dampingFactor = 0.075;
-controls.enableZoom = false;
+controls.enableZoom = true;
 controls.enableRotate = true;
 controls.enablePan = true;
 controls.screenSpacePanning = true;
